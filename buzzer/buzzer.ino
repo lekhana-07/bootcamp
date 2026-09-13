@@ -1,13 +1,13 @@
-const int buzzerPin = 5; // Buzzer connected to digital pin 8
+const int buzzerPin = 5; 
 
 void setup() {
-  pinMode(buzzerPin, OUTPUT); // Set the buzzer pin as an OUTPUT
+  pinMode(buzzerPin, OUTPUT); 
 }
 
 void loop() {
-  digitalWrite(buzzerPin, HIGH); // Turn the buzzer ON
-  delay(1000);                   // Wait for 1 second (1000 milliseconds)
+  digitalWrite(buzzerPin, HIGH); 
+  delay(1000);                   
   
-  digitalWrite(buzzerPin, LOW);  // Turn the buzzer OFF
-  delay(1000);                   // Wait for 1 second
+  digitalWrite(buzzerPin, LOW);  
+  delay(1000);                   
 }

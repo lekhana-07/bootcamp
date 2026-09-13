@@ -1,15 +1,15 @@
-const int lightPin = A0; // Define the analog pin for the light sensor
+const int lightPin = A0; 
 
 void setup() {
-  Serial.begin(9600);    // Start serial communication at 9600 baud
+  Serial.begin(9600);    
 }
 
 void loop() {
-  int lightValue = analogRead(lightPin); // Read the analog value (0 to 1023)
+  int lightValue = analogRead(lightPin); 
   
   Serial.print("Light Intensity: ");
-  Serial.println(lightValue);          // Print value to the Serial Monitor
+  Serial.println(lightValue);          
   
-  delay(500);                          // Wait for half a second between readings
+  delay(500);                          
 }
 

@@ -13,29 +13,23 @@ void setup() {
 
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
     Serial.println(F("SSD1306 allocation failed"));
-    for(;;); // Don't proceed, loop forever
+    for(;;); 
   }
 
-  // Clear the buffer (removes the default Adafruit splash screen)
   display.clearDisplay();
 
-  // Set text size (1 is small, 2 is medium, etc.)
   display.setTextSize(1);      
-  
-  // Set text color (WHITE means pixel on for monochrome screens)
+ 
   display.setTextColor(SSD1306_WHITE);  
   
-  // Set cursor position (x, y) coordinates
   display.setCursor(0, 10);     
   
-  // Print your message
   display.println("Hello");
 
-  // Pushes the text buffer from Arduino memory to the actual screen hardware
   display.display(); 
 }
 
 void loop() {
-  // Nothing needed here for static text
+
 }
 
